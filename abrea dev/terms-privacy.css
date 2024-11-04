@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #0275A4; */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    /* border-bottom: 1px solid #e0e0e0b6; */
+}
+
+.navbar .brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* dont forget to add hover to the (Dev) */
+
+.navbar .tagline {
+    font-size: 14px;
+    color: #888888;
+}
+
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    transition: hover 0.3s ease, transform 0.7s ease;
+}
+
+.navbar .nav-links a:hover{
+    /* hover: 10px 10px 20px 5px #9DE9FF; */
+    /* transform: scale(1.3); */
+    color: #0275A4;
+}
+
+.login {
+    /* background-color: rgb(14, 14, 14) !important; */
+    padding: 20px;
+}
+
+.navbar .get-started {
+    background-color: #0275A4;
+    color: #ffffff !important;
+    padding: 10px 20px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+.get-started:hover {
+    background-color: #016891;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #555;
+}
+
+p, ul {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+ul li {
+    list-style-type: disc;
+}
+
+/* end */
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px; 
+    transition: transform 0.3s;
+}
+
+.whatsapp-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1); 
+}
+
+
+@media (max-width: 600px) {
+    .whatsapp-icon {
+        width: 50px; 
+    }
+}
+
+.footer {
+    background-color: #0275A4;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.footer-x {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+.column h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.column p, .column a {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #333;
+    text-decoration: none;
+}
+
+.column a:hover {
+    text-decoration: underline;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.subscribe-form input[type="checkbox"] {
+    margin: 10px 0;
+}
+
+.subscribe-form button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #666;
+    color: #fff;
+}
+
+.subscribe-form button:hover {
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+    .footer-x {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .column {
+        padding: 10px;
+    }
+
+    .column h2 {
+        font-size: 1.3em;
+    }
+
+    .column p,
+    .column a {
+        font-size: 0.9em;
+    }
+
+    .subscribe-form input[type="email"] {
+        padding: 8px;
+    }
+
+    .subscribe-form button {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-x {
+        padding: 5px; 
+    }
+
+    .column h2 {
+        font-size: 1.2em; 
+    }
+
+    .column p,
+    .column a {
+        font-size: 0.8em; 
+    }
+
+    .subscribe-form input[type="email"] {
+        padding: 6px; 
+    }
+
+    .subscribe-form button {
+        padding: 6px; 
+    }
+}
