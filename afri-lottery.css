@@ -1,0 +1,373 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Fixed Navbar */
+.navbar {
+    background-color: #FFF8DC; /* Milky Yellow */
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+/* Rotating Dice */
+.navbar-brand i {
+    margin-right: 10px;
+    color: #FFD700; /* Gold */
+    animation: spin 3s infinite linear;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #333 !important; /* Dark Text */
+    transition: color 0.4s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFD700 !important; /* Gold Hover */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    background-color: #FFF8DC; /* Match Navbar */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    color: #333 !important; /* Dark text */
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item i {
+    margin-right: 10px;
+    color: #FFD700; /* Gold */
+}
+
+.dropdown-item:hover {
+    background-color: #FFD700 !important; /* Gold hover */
+    color: #fff !important;
+}
+
+/* Prevent content from hiding under navbar */
+body {
+    padding-top: 50px;
+    background-color: #f8f9fa;
+}
+
+/* Mobile Fix: Ensure dropdown works */
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+/* Afri-Lottery Jackpot Section */
+#afri-lottery-jackpot {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.jackpot-info {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.jackpot-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.jackpot-amount {
+    font-size: 2rem;
+    color: #FFD700;
+    font-weight: bold;
+}
+
+.jackpot-info-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.next-draw {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.game-instructions h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.game-instructions ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.game-instructions li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.play-now {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.play-now a {
+    background-color: #FFD700;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.play-now a:hover {
+    background-color: #FFB700;
+    transition: background-color 0.3s;
+}
+
+.jackpot-visualization img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+./* Visualization Text */
+.visualization-text {
+    font-size: 1.15rem;
+    color: #555;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.visualization-description {
+    font-size: 1.1rem;
+    color: #777;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Spacing Adjustments */
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+/* Video Section */
+.video-section {
+    background-color: #fff;
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.video-container {
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    border-radius: 8px;
+}
+
+.convincing-message {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.convincing-message strong {
+    color: #FFD700; /* Gold for emphasis */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* lottery numbers explain*/
+.lottery-numbers-explained {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.lottery-numbers-explained h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.winning-numbers-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.number-circle {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.main-number {
+    background-color: #FFD700; /* Gold */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+}
+
+.bonus-number {
+    background-color: #d9534f; /* Red */
+    box-shadow: 0 0 10px rgba(217, 83, 79, 0.6);
+}
+
+.plus-sign {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 10px;
+    color: #333;
+}
+
+.winning-numbers-text {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.matching-guide, .strategy-tips {
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.play-now-section {
+    margin-top: 20px;
+}
+
+.play-now-section .btn {
+    font-size: 1.2em;
+    padding: 10px 20px;
+}
+
+
+ /* Afri-Lottery button */
+ .africa-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFD700; /* Gold */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.africa-button:hover {
+    transform: scale(1.05);
+}
+
+/* Mirror Animation Effect */
+.africa-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.2), rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+    transform: skewX(-20deg);
+    animation: shine 4s infinite;
+}
+
+@keyframes shine {
+    0% { left: -75%; }
+    25% { left: 100%; }
+    50% { left: -75%; }
+    100% { left: 100%; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afri-Lottery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-dice"></i> Afri-Lottery
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="gamesDropdown" data-bs-toggle="dropdown" aria-expanded="false"> 
+                        <i class="fas fa-gamepad"></i> Games
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="gamesDropdown">
+                        <li><a class="dropdown-item" href="afri-lottery.html"><i class="fas fa-ticket-alt"></i> Afri-Lottery</a></li>
+                        <li><a class="dropdown-item" href="other-games.html"><i class="fas fa-dice"></i> Other Games</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="resultsDropdown" data-bs-toggle="dropdown" aria-expanded="false"> 
+                        <i class="fas fa-chart-line"></i> Results
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="resultsDropdown">
+                        <li><a class="dropdown-item" href="latest-result.html"><i class="fas fa-trophy"></i> Latest Results</a></li>
+                        <li><a class="dropdown-item" href="login.html"><i class="fas fa-check"></i> Check Your Numbers</a></li>
+                        <li><a class="dropdown-item" href="login.html"><i class="fas fa-calendar-alt"></i> Draw Schedule</a></li>
+                        <li><a class="dropdown-item" href="winner-stories.html"><i class="fas fa-star"></i> Winner Stories</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" data-bs-toggle="dropdown" aria-expanded="false"> 
+                        <i class="fas fa-ellipsis-h"></i> More
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+                        <li><a class="dropdown-item" href="news.html"><i class="fas fa-newspaper"></i> News</a></li>
+                        <li><a class="dropdown-item" href="media-center.html"><i class="fas fa-photo-video"></i> Media Center</a></li>
+                        <li><a class="dropdown-item" href="FAQ.html"><i class="fas fa-question-circle"></i> FAQs</a></li>
+                        <li><a class="dropdown-item" href="privacy-policy.html"><i class="fas fa-user-shield"></i> Privacy Policy</a></li>
+                        <li><a class="dropdown-item" href="TandC.html"><i class="fas fa-file-contract"></i> Terms & Conditions</a></li>
+                        <li><a class="dropdown-item" href="play-responsibly.html"><i class="fas fa-exclamation-triangle"></i> Play Responsibly</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="shop.html"><i class="fas fa-store"></i> Shop</a></li>
+                <li class="nav-item">
+                    <a class="btn btn-warning text-dark" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+     <!-- hero -->
+<section class="hero-section text-center text-white py-5">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Afri-Lottery Jackpot</h1>
+        <div class="jackpot-box">
+            <p class="lead">Current Jackpot:</p>
+            <h2 id="jackpotAmount">$0</h2>
+        </div>
+        <a href="#" class="btn btn-success btn-lg mt-3">Play Now</a>
+    </div>
+</section>
+
+<!-- winning 1-->
+<div class="container mt-5">
+    <div class="card text-center shadow-lg border-0">
+        <!-- Header -->
+        <div class="card-header bg-dark text-white py-3">
+            <h4 class="mb-0">Winning Numbers</h4>
+        </div>
+
+        <!-- Body -->
+        <div class="card-body">
+            <h5 class="text-muted">Wed, Apr 2, 2025</h5>
+            
+            <!-- Winning Numbers -->
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+                <span class="winning-number bg-danger text-white">12</span>
+                <span class="winning-number bg-danger text-white">28</span>
+                <span class="winning-number bg-danger text-white">39</span>
+                <span class="winning-number bg-danger text-white">41</span>
+                <span class="winning-number bg-danger text-white">44</span>
+                <span class="winning-number bg-primary text-white">1</span>
+            </div>
+
+            <!-- Spotty Bonus -->
+            <button class="btn btn-warning btn-lg text-dark fw-bold px-4 mb-3">Spotty Bonus 2x</button>
+
+            <!-- Action Buttons -->
+            <div class="d-grid gap-2 d-md-flex justify-content-center">
+                <button class="btn btn-dark btn-lg px-4">VIEW RESULTS</button>
+                <button class="btn btn-outline-dark btn-lg px-4">CHECK YOUR NUMBERS</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <!-- winning 2-->
+      <div class="countdown-container">
+    <h2>Next Drawing</h2>
+    <h4>Sat, Apr 5, 2025</h4>
+
+    <div class="countdown-wrapper">
+        <!-- Daily Countdown Box -->
+        <div class="countdown-box">
+            <h3>Daily Draw</h3>
+            <div class="countdown">
+                <div class="time-box">
+                    <div class="flip-inner" id="daily-hours">23</div>
+                    <span>HOURS</span>
+                </div>
+                <div class="time-box">
+                    <div class="flip-inner" id="daily-minutes">59</div>
+                    <span>MINUTES</span>
+                </div>
+                <div class="time-box">
+                    <div class="flip-inner" id="daily-seconds">59</div>
+                    <span>SECONDS</span>
+                </div>
+            </div>
+            <div class="amount-at-stake">$500</div>
+             <!-- Jackpot Info inside Monthly Box -->
+            <div class="jackpot-info mt-4">
+                <div class="estimated-jackpot">ESTIMATED JACKPOT</div>
+                <div class="jackpot">$3,000 Thousand</div>
+                <div class="cash-value">CASH VALUE</div>
+                <div class="cash-value">$1,000 Thousand</div>
+            </div>
+        </div>
+
+        <!-- Weekly Countdown Box -->
+        <div class="countdown-box">
+            <h3>Weekly Draw</h3>
+            <div class="countdown">
+                <div class="time-box">
+                    <div class="flip-inner" id="weekly-hours">6</div>
+                    <span>DAYS</span>
+                </div>
+                <div class="time-box">
+                    <div class="flip-inner" id="weekly-minutes">23</div>
+                    <span>HOURS</span>
+                </div>
+                <div class="time-box">
+                    <div class="flip-inner" id="weekly-seconds">59</div>
+                    <span>MINUTES</span>
+                </div>
+            </div>
+            <div class="amount-at-stake">$5,000</div>
+             <!-- Jackpot Info inside Monthly Box -->
+            <div class="jackpot-info mt-4">
+                <div class="estimated-jackpot">ESTIMATED JACKPOT</div>
+                <div class="jackpot">$12,000 Thousand</div>
+                <div class="cash-value">CASH VALUE</div>
+                <div class="cash-value">$9,000 Thousand</div>
+            </div>
+        </div>
+
+        <!-- Monthly Countdown Box with Jackpot Details -->
+        <div class="countdown-box">
+            <h3>Monthly Draw</h3>
+            <div class="countdown">
+                <div class="time-box">
+                    <div class="flip-inner" id="monthly-hours">30</div>
+                    <span>DAYS</span>
+                </div>
+                <div class="time-box">
+                    <div class="flip-inner" id="monthly-minutes">23</div>
+                    <span>HOURS</span>
+                </div>
+                <div class="time-box">
+                    <div class="flip-inner" id="monthly-seconds">59</div>
+                    <span>MINUTES</span>
+                </div>
+            </div>
+            <div class="amount-at-stake">$25,000 Thousand</div>
+
+            <!-- Jackpot Info inside Monthly Box -->
+            <div class="jackpot-info mt-4">
+                <div class="estimated-jackpot">ESTIMATED JACKPOT</div>
+                <div class="jackpot">$50,000 Thousand</div>
+                <div class="cash-value">CASH VALUE</div>
+                <div class="cash-value">$31,000 Thousand</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+   <!-- results -->
+   <div class="winners-section">
+    <div class="winner-card">
+        <h2>Winners</h2>
+        <h5>Wed, Apr 2, 2025</h5>
+
+        <div class="winner-category">
+            <h6>LOTTO AFRICA <strong>JACKPOT WINNERS</strong></h6>
+            <p class="none">None</p>
+        </div>
+
+        <div class="winner-category">
+            <h6>AFRI-LOTTERY DAILY  <strong>MULTIPLIER WINNERS</strong></h6>
+            <p class="none">None</p>
+        </div>
+
+        <div class="winner-category">
+            <h6>AFRI-LOTTERY WEEKLY<strong>$20,000 WINNERS</strong></h6>
+            <p class="none">None</p>
+        </div>
+        
+        <div class="winner-category">
+            <h6>AFRI-LOTTERY MONTHLY<strong>$20,000 WINNERS</strong></h6>
+            <p class="none">None</p>
+        </div>
+    </div>
+</div>
+
+     <!-- FAQ -->
+     <div class="faq-section">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+    <div class="faq-container">
+        
+        <div class="faq-item">
+            <button class="faq-question">How do I play Afri-Lottery?</button>
+            <div class="faq-answer">
+                <p>To play, choose your numbers and purchase a ticket from an authorized retailer or online platform.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">What time are the draws?</button>
+            <div class="faq-answer">
+                <p>Draws are held daily at 9:00 PM local time. Special jackpot draws occur weekly.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">How do I claim my winnings?</button>
+            <div class="faq-answer">
+                <p>Prizes can be claimed at authorized Afri-Lottery retailers. For larger prizes, visit a lottery office or submit an online claim.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Can I play Afri-Lottery online?</button>
+            <div class="faq-answer">
+                <p>Yes, you can purchase tickets online through our official website or authorized mobile apps.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">What happens if I lose my ticket?</button>
+            <div class="faq-answer">
+                <p>Lottery tickets are bearer instruments, meaning whoever holds the ticket can claim the prize. Always sign your ticket and keep it safe.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Are Afri-Lottery winnings taxed?</button>
+            <div class="faq-answer">
+                <p>Lottery winnings may be subject to taxes based on local regulations. Consult a tax professional for details.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">What are the odds of winning?</button>
+            <div class="faq-answer">
+                <p>Odds vary by game type. The odds of winning the jackpot are approximately 1 in 24 million.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <!-- contact us -->
+    <div class="contact-us-section">
+    <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        </div>
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="#">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" class="form-control" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Footer -->
+<footer class="bg-dark text-light py-4">
+    <div class="container">
+        <div class="row">
+            <!-- Company Info -->
+            <div class="col-md-3">
+                <h5>Afri-Lottery</h5>
+                <p>Bringing you life-changing jackpots and exciting games. Play responsibly and win big!</p>
+                <h2 class="africa-button mt-3">AFRICA</h2> <br>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-2">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-light">Home</a></li>
+                    <li><a href="login.html" class="text-light">Play Now</a></li>
+                    <li><a href="latest-result.html" class="text-light">Latest Results</a></li>
+                    <li><a href="login.html" class="text-light">Check Your Numbers</a></li>
+                </ul>
+            </div>
+
+            <!-- Support & Legal -->
+            <div class="col-md-2">
+                <h5>Support & Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="privacy-policy.html" class="text-light">Privacy Policy</a></li>
+                    <li><a href="TandC.html" class="text-light">Terms & Conditions</a></li>
+                    <li><a href="play-responsible.html" class="text-light">Responsible Gaming</a></li>
+                    <li><a href="help-center.html" class="text-light">Help Center</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-2">
+                <h5>Contact Us</h5>
+                <p>Email: support@afri-lottery.com</p>
+                <p>Phone: +27 (123) 456-7890</p>
+            </div>
+
+            <!-- Newsletter & Social Links -->
+            <div class="col-md-3">
+                <h5>Subscribe for Updates</h5>
+                <form>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                        <button class="btn btn-warning text-dark" type="submit">Subscribe</button>
+                    </div>
+                </form>
+                <h5>Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#" class="text-light me-2"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-light me-2"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-light me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-3 border-light">
+
+        <!-- Copyright Notice -->
+        <div class="text-center">
+            <p class="mb-0">&copy; 2025 Afri-Lottery. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS and Popper.js for dropdown functionality -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

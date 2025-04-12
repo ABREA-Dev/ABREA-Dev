@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="FAQs.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-dice"></i> Afri-Lottery
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="gamesDropdown" data-bs-toggle="dropdown" aria-expanded="false"> 
+                        <i class="fas fa-gamepad"></i> Games
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="gamesDropdown">
+                        <li><a class="dropdown-item" href="afri-lottery.html"><i class="fas fa-ticket-alt"></i> Afri-Lottery</a></li>
+                        <li><a class="dropdown-item" href="other-games.html"><i class="fas fa-dice"></i> Other Games</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="resultsDropdown" data-bs-toggle="dropdown" aria-expanded="false"> 
+                        <i class="fas fa-chart-line"></i> Results
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="resultsDropdown">
+                        <li><a class="dropdown-item" href="latest-result.html"><i class="fas fa-trophy"></i> Latest Results</a></li>
+                        <li><a class="dropdown-item" href="login.html"><i class="fas fa-check"></i> Check Your Numbers</a></li>
+                        <li><a class="dropdown-item" href="login.html"><i class="fas fa-calendar-alt"></i> Draw Schedule</a></li>
+                        <li><a class="dropdown-item" href="winner-stories.html"><i class="fas fa-star"></i> Winner Stories</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" data-bs-toggle="dropdown" aria-expanded="false"> 
+                        <i class="fas fa-ellipsis-h"></i> More
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+                        <li><a class="dropdown-item" href="news.html"><i class="fas fa-newspaper"></i> News</a></li>
+                        <li><a class="dropdown-item" href="media-center.html"><i class="fas fa-photo-video"></i> Media Center</a></li>
+                        <li><a class="dropdown-item" href="FAQ.html"><i class="fas fa-question-circle"></i> FAQs</a></li>
+                        <li><a class="dropdown-item" href="privacy-policy.html"><i class="fas fa-user-shield"></i> Privacy Policy</a></li>
+                        <li><a class="dropdown-item" href="T&C.html"><i class="fas fa-file-contract"></i> Terms & Conditions</a></li>
+                        <li><a class="dropdown-item" href="play-responsible.html"><i class="fas fa-exclamation-triangle"></i> Play Responsibly</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="shop.html"><i class="fas fa-store"></i> Shop</a></li>
+                <li class="nav-item">
+                    <a class="btn btn-warning text-dark" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="faq-hero text-white d-flex align-items-center justify-content-center text-center">
+    <div>
+      <h1 class="display-5 fw-bold">Frequently Asked Questions</h1>
+      <p class="lead">Everything you need to know about Afri-Lottery</p>
+    </div>
+  </section>
+
+  <!-- Search -->
+  <div class="container py-4">
+    <input type="text" class="form-control form-control-lg mb-5" placeholder="Search FAQs...">
+  </div>
+
+  <!-- FAQ Sections -->
+  <div class="container faq-grid">
+    
+    <!-- General Section -->
+    <div class="faq-category">
+      <h4 class="mb-3">General</h4>
+      <div class="accordion" id="faqGeneral">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#general1">
+        <i class="me-2">❓</i> What is Afri-Lottery?
+      </button>
+    </h2>
+    <div id="general1" class="accordion-collapse collapse show" data-bs-parent="#faqGeneral">
+      <div class="accordion-body">Afri-Lottery is a digital lottery platform offering multiple lottery games and chances to win amazing prizes.</div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general2">
+        <i class="me-2">ℹ️</i> How do I participate?
+      </button>
+    </h2>
+    <div id="general2" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+      <div class="accordion-body">You can register on our website and buy tickets for the active draws listed.</div>
+    </div>
+  </div>
+
+  <!-- New FAQs -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general3">
+        <i class="me-2">📅</i> How often are draws conducted?
+      </button>
+    </h2>
+    <div id="general3" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+      <div class="accordion-body">Draws are conducted every week. Check the Draw Schedule for upcoming dates.</div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general4">
+        <i class="me-2">🌍</i> Is Afri-Lottery available in my country?
+      </button>
+    </h2>
+    <div id="general4" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+      <div class="accordion-body">Afri-Lottery is available in select African countries. Please check our Terms & Conditions for eligibility.</div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general5">
+        <i class="me-2">👤</i> Do I need an account to play?
+      </button>
+    </h2>
+    <div id="general5" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+      <div class="accordion-body">Yes, creating a free account is required to purchase tickets and claim winnings.</div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general6">
+        <i class="me-2">⚖️</i> Is Afri-Lottery legal?
+      </button>
+    </h2>
+    <div id="general6" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+      <div class="accordion-body">Yes, Afri-Lottery operates under official licenses and follows national regulatory guidelines.</div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general8">
+      <i class="me-2">🕒</i> Can I cancel or change my ticket after purchase?
+    </button>
+  </h2>
+  <div id="general8" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+    <div class="accordion-body">Unfortunately, once a ticket is purchased, it cannot be canceled or modified. Please review carefully before checkout.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general9">
+      <i class="me-2">⏳</i> What happens if I miss the draw time?
+    </button>
+  </h2>
+  <div id="general9" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+    <div class="accordion-body">You can still check the results on our website. If you had a valid ticket for that draw, your winnings are safe.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general10">
+      <i class="me-2">📱</i> Is there a mobile app?
+    </button>
+  </h2>
+  <div id="general10" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+    <div class="accordion-body">Yes, our mobile app is available for Android and iOS. Download it for easy ticket purchases and result tracking.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general11">
+      <i class="me-2">🎉</i> What kind of prizes can I win?
+    </button>
+  </h2>
+  <div id="general11" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+    <div class="accordion-body">Prizes range from small cash wins to life-changing jackpots and surprise giveaways.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general12">
+      <i class="me-2">❗</i> What if I forget my password?
+    </button>
+  </h2>
+  <div id="general12" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+    <div class="accordion-body">Click the “Forgot Password” link on the login page and follow the instructions to reset it securely.</div>
+  </div>
+</div>
+
+  <div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general13">
+      <i class="me-2">🌍</i> Is Afri-Lottery available in all countries?
+    </button>
+  </h2>
+  <div id="general13" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+    <div class="accordion-body">Afri-Lottery is currently available in select African countries. Check our site for availability in your region.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general14">
+      <i class="me-2">👤</i> Do I need an account to play?
+    </button>
+  </h2>
+  <div id="general14" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+    <div class="accordion-body">Yes, you must create an account to buy tickets, view your history, and claim any winnings.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general15">
+      <i class="me-2">📧</i> Will I get notified if I win?
+    </button>
+  </h2>
+  <div id="general15" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+    <div class="accordion-body">Yes, we’ll notify you by email and also send a message to your dashboard if you win any prize.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general16">
+      <i class="me-2">🔐</i> Is my information secure?
+    </button>
+  </h2>
+  <div id="general16" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+    <div class="accordion-body">Absolutely. We use industry-standard encryption and security practices to protect your personal data.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general17">
+      <i class="me-2">📅</i> How often are the draws held?
+    </button>
+  </h2>
+  <div id="general17" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+    <div class="accordion-body">Draws are held multiple times weekly depending on the game. Check the Draw Schedule page for details.</div>
+  </div>
+</div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general7">
+        <i class="me-2">🔐</i> Is my information secure?
+      </button>
+    </h2>
+    <div id="general7" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+      <div class="accordion-body">We use encrypted technologies to protect your data and ensure secure transactions.</div>
+    </div>
+  </div>
+</div>
+
+    <!-- Ticketing Section -->
+    <div class="faq-category">
+      <h4 class="mb-3">Tickets</h4>
+      <div class="accordion" id="faqTickets">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ticket1">
+              <i class="me-2">🎫</i> How can I buy a ticket?
+            </button>
+          </h2>
+          <div id="ticket1" class="accordion-collapse collapse" data-bs-parent="#faqTickets">
+            <div class="accordion-body">Tickets can be purchased online using mobile payment or debit/credit card.</div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ticket2">
+      <i class="me-2">📱</i> Can I buy tickets using my phone?
+    </button>
+  </h2>
+  <div id="ticket2" class="accordion-collapse collapse" data-bs-parent="#faqTickets">
+    <div class="accordion-body">Yes, our platform is mobile-friendly, and you can buy tickets through your smartphone or tablet with ease.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ticket3">
+      <i class="me-2">🧾</i> Will I get a receipt after purchase?
+    </button>
+  </h2>
+  <div id="ticket3" class="accordion-collapse collapse" data-bs-parent="#faqTickets">
+    <div class="accordion-body">Yes, a digital receipt will be sent to your email and will also be available in your user dashboard.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ticket4">
+      <i class="me-2">❌</i> Can I cancel a ticket after purchase?
+    </button>
+  </h2>
+  <div id="ticket4" class="accordion-collapse collapse" data-bs-parent="#faqTickets">
+    <div class="accordion-body">Unfortunately, once a ticket is purchased, it cannot be canceled or refunded.</div>
+  </div>
+</div>
+    
+    <div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ticket7">
+      <i class="me-2">🌍</i> Can I buy tickets from outside my country?
+    </button>
+  </h2>
+  <div id="ticket7" class="accordion-collapse collapse" data-bs-parent="#faqTickets">
+    <div class="accordion-body">Yes, Afri-Lottery allows international participation, provided local laws in your country permit it.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ticket8">
+      <i class="me-2">🆔</i> Do I need an ID to buy a ticket?
+    </button>
+  </h2>
+  <div id="ticket8" class="accordion-collapse collapse" data-bs-parent="#faqTickets">
+    <div class="accordion-body">Yes, users must verify their identity with valid documentation before purchasing tickets and claiming prizes.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ticket9">
+      <i class="me-2">🕒</i> When is the ticket sales deadline?
+    </button>
+  </h2>
+  <div id="ticket9" class="accordion-collapse collapse" data-bs-parent="#faqTickets">
+    <div class="accordion-body">Ticket sales close one hour before the scheduled draw time. Make sure to purchase in advance!</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ticket10">
+      <i class="me-2">🔒</i> Is my ticket purchase secure?
+    </button>
+  </h2>
+  <div id="ticket10" class="accordion-collapse collapse" data-bs-parent="#faqTickets">
+    <div class="accordion-body">Absolutely. All transactions are encrypted and processed through secure payment gateways.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ticket11">
+      <i class="me-2">👥</i> Can I buy tickets for someone else?
+    </button>
+  </h2>
+  <div id="ticket11" class="accordion-collapse collapse" data-bs-parent="#faqTickets">
+    <div class="accordion-body">You can gift tickets, but the recipient must be registered and meet eligibility requirements.</div>
+  </div>
+</div>
+    
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ticket5">
+      <i class="me-2">⏳</i> How long is a ticket valid?
+    </button>
+  </h2>
+  <div id="ticket5" class="accordion-collapse collapse" data-bs-parent="#faqTickets">
+    <div class="accordion-body">Tickets are valid only for the draw date they are purchased for. Unused tickets expire after the draw is complete.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ticket6">
+      <i class="me-2">🔢</i> Can I choose my own numbers?
+    </button>
+  </h2>
+  <div id="ticket6" class="accordion-collapse collapse" data-bs-parent="#faqTickets">
+    <div class="accordion-body">Yes! You can either select your own numbers or use the Quick Pick option to get randomly generated numbers.</div>
+  </div>
+</div>
+      </div>
+    </div>
+
+    <!-- Winners Section -->
+    <div class="faq-category">
+      <h4 class="mb-3">Winners</h4>
+      <div class="accordion" id="faqWinners">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#winners1">
+              <i class="me-2">🏆</i> How are winners selected?
+            </button>
+          </h2>
+          <div id="winners1" class="accordion-collapse collapse" data-bs-parent="#faqWinners">
+            <div class="accordion-body">Winners are randomly drawn using our verified digital system.</div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#winner1">
+      <i class="me-2">💰</i> How do I claim my winnings after winning?
+    </button>
+  </h2>
+  <div id="winner1" class="accordion-collapse collapse" data-bs-parent="#faqWinners">
+    <div class="accordion-body">After winning, you will receive an email with instructions on how to claim your prize. You can also log into your account to view detailed steps based on your winnings.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#winner2">
+      <i class="me-2">📢</i> Can I share my winnings story on the website?
+    </button>
+  </h2>
+  <div id="winner2" class="accordion-collapse collapse" data-bs-parent="#faqWinners">
+    <div class="accordion-body">Yes! We encourage winners to share their stories. Simply fill out the "Share Your Story" form, and our team will get in touch with you for further details.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#winner3">
+      <i class="me-2">💵</i> How are winner amounts calculated?
+    </button>
+  </h2>
+  <div id="winner3" class="accordion-collapse collapse" data-bs-parent="#faqWinners">
+    <div class="accordion-body">The amount you win depends on the type of game played and the number of players. Winnings are calculated based on the total pot and the number of winners in each round.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#winner4">
+      <i class="me-2">🔒</i> Can I remain anonymous after winning?
+    </button>
+  </h2>
+  <div id="winner4" class="accordion-collapse collapse" data-bs-parent="#faqWinners">
+    <div class="accordion-body">We respect your privacy. You can choose to remain anonymous, but if you wish to share your story, we will work with you to ensure it aligns with your preferences.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#winner5">
+      <i class="me-2">⚠️</i> What if my payment details are incorrect after I win?
+    </button>
+  </h2>
+  <div id="winner5" class="accordion-collapse collapse" data-bs-parent="#faqWinners">
+    <div class="accordion-body">If your payment details change or are incorrect, please update your account as soon as possible. Contact our support team to ensure your winnings are processed smoothly.</div>
+  </div>
+</div>
+
+   <div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#winner6">
+      <i class="me-2">🌍</i> Can winners from any country participate in the winner stories section?
+    </button>
+  </h2>
+  <div id="winner6" class="accordion-collapse collapse" data-bs-parent="#faqWinners">
+    <div class="accordion-body">Yes, winners from any country are welcome to share their stories, as long as they meet the eligibility requirements for participation.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#winner7">
+      <i class="me-2">📝</i> Can I update my winner's story after sharing it?
+    </button>
+  </h2>
+  <div id="winner7" class="accordion-collapse collapse" data-bs-parent="#faqWinners">
+    <div class="accordion-body">Yes, you can update your story anytime by contacting our support team. We'll assist you with the necessary changes.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#winner8">
+      <i class="me-2">💬</i> How do I submit my winner's story?
+    </button>
+  </h2>
+  <div id="winner8" class="accordion-collapse collapse" data-bs-parent="#faqWinners">
+    <div class="accordion-body">To submit your story, please fill out the "Share Your Story" form on our website. Our team will reach out to confirm the details before publishing.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#winner9">
+      <i class="me-2">🎉</i> Will I be featured in a special announcement after winning?
+    </button>
+  </h2>
+  <div id="winner9" class="accordion-collapse collapse" data-bs-parent="#faqWinners">
+    <div class="accordion-body">Yes, we feature top winners in a special announcement on our website and social media platforms, unless they choose to remain anonymous.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#winner10">
+      <i class="me-2">💡</i> Can I receive feedback on my winner's story before it is published?
+    </button>
+  </h2>
+  <div id="winner10" class="accordion-collapse collapse" data-bs-parent="#faqWinners">
+    <div class="accordion-body">Yes, you can receive feedback on your story before it's published. Our team will work with you to ensure the content is accurate and engaging.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#winner11">
+      <i class="me-2">🎥</i> Are there any media opportunities for winners to share their stories?
+    </button>
+  </h2>
+  <div id="winner11" class="accordion-collapse collapse" data-bs-parent="#faqWinners">
+    <div class="accordion-body">Yes, winners may be invited to share their stories through video or interviews. We’ll provide all necessary details and support for this process.</div>
+  </div>
+</div>
+        
+      </div>
+    </div>
+
+    <!-- Payments Section -->
+    <div class="faq-category">
+      <h4 class="mb-3">Payments</h4>
+      <div class="accordion" id="faqPayments">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#payment0">
+              <i class="me-2">🎟️</i> How do I claim my winnings?
+            </button>
+          </h2>
+          <div id="payment0" class="accordion-collapse collapse" data-bs-parent="#faqPayments">
+            <div class="accordion-body">Winnings are transferred securely to your registered account within 2–5 business days.</div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#payment1">
+      <i class="me-2">💳</i> What payment methods are accepted?
+    </button>
+  </h2>
+  <div id="payment1" class="accordion-collapse collapse" data-bs-parent="#faqPayments">
+    <div class="accordion-body">We accept various payment methods, including credit/debit cards, bank transfers, and mobile payment platforms, depending on your location.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#payment2">
+      <i class="me-2">🔄</i> Can I change my payment method after purchasing a ticket?
+    </button>
+  </h2>
+  <div id="payment2" class="accordion-collapse collapse" data-bs-parent="#faqPayments">
+    <div class="accordion-body">Once a payment has been processed, it cannot be changed. Please ensure your payment method is correct before confirming your purchase.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#payment3">
+      <i class="me-2">🕒</i> How long does it take for my payment to be processed?
+    </button>
+  </h2>
+  <div id="payment3" class="accordion-collapse collapse" data-bs-parent="#faqPayments">
+    <div class="accordion-body">Payment processing times vary depending on the payment method. Credit card payments typically process within minutes, while bank transfers may take 1-3 business days.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#payment4">
+      <i class="me-2">💸</i> Will I be charged extra fees for making a payment?
+    </button>
+  </h2>
+  <div id="payment4" class="accordion-collapse collapse" data-bs-parent="#faqPayments">
+    <div class="accordion-body">No, we do not charge any additional fees for making a payment. However, your bank or payment provider may charge standard processing fees.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#payment5">
+      <i class="me-2">❓</i> What should I do if my payment fails?
+    </button>
+  </h2>
+  <div id="payment5" class="accordion-collapse collapse" data-bs-parent="#faqPayments">
+    <div class="accordion-body">If your payment fails, please check your payment details and try again. If the issue persists, contact our support team for assistance.</div>
+  </div>
+</div>
+        
+           <div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#payment6">
+      <i class="me-2">💳</i> Can I use multiple payment methods for a single purchase?
+    </button>
+  </h2>
+  <div id="payment6" class="accordion-collapse collapse" data-bs-parent="#faqPayments">
+    <div class="accordion-body">Currently, we only accept one payment method per purchase. Please ensure that your chosen payment method has sufficient funds for the transaction.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#payment7">
+      <i class="me-2">🔒</i> Is my payment information safe on your website?
+    </button>
+  </h2>
+  <div id="payment7" class="accordion-collapse collapse" data-bs-parent="#faqPayments">
+    <div class="accordion-body">Yes, your payment information is protected with SSL encryption. We use secure payment gateways to process all transactions safely.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#payment8">
+      <i class="me-2">🔄</i> Can I get a refund for my ticket purchase?
+    </button>
+  </h2>
+  <div id="payment8" class="accordion-collapse collapse" data-bs-parent="#faqPayments">
+    <div class="accordion-body">Unfortunately, ticket purchases are non-refundable. Please review your purchase before confirming it to ensure accuracy.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#payment9">
+      <i class="me-2">💰</i> Can I pay using cryptocurrency?
+    </button>
+  </h2>
+  <div id="payment9" class="accordion-collapse collapse" data-bs-parent="#faqPayments">
+    <div class="accordion-body">Currently, we do not accept cryptocurrency as a payment method. We accept traditional payment methods such as credit/debit cards and bank transfers.</div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#payment10">
+      <i class="me-2">🌍</i> Can I use my local currency to make a payment?
+    </button>
+  </h2>
+  <div id="payment10" class="accordion-collapse collapse" data-bs-parent="#faqPayments">
+    <div class="accordion-body">Yes, we accept payments in multiple currencies. The available options depend on your location and the payment method you choose.</div>
+  </div>
+</div>
+        
+      </div>
+    </div>
+    </div>
+    </div>
+
+ 
+
+
+<!-- Footer -->
+<footer class="bg-dark text-light py-4">
+    <div class="container">
+        <div class="row">
+            <!-- Company Info -->
+            <div class="col-md-3">
+                <h5>Afri-Lottery</h5>
+                <p>Bringing you life-changing jackpots and exciting games. Play responsibly and win big!</p>
+                <h2 class="africa-button mt-3">AFRICA</h2> <br>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-2">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Home</a></li>
+                    <li><a href="#" class="text-light">Play Now</a></li>
+                    <li><a href="#" class="text-light">Latest Results</a></li>
+                    <li><a href="#" class="text-light">Check Your Numbers</a></li>
+                </ul>
+            </div>
+
+            <!-- Support & Legal -->
+            <div class="col-md-2">
+                <h5>Support & Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Privacy Policy</a></li>
+                    <li><a href="#" class="text-light">Terms & Conditions</a></li>
+                    <li><a href="#" class="text-light">Responsible Gaming</a></li>
+                    <li><a href="#" class="text-light">Help Center</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-2">
+                <h5>Contact Us</h5>
+                <p>Email: support@afri-lottery.com</p>
+                <p>Phone: +27 (123) 456-7890</p>
+            </div>
+
+            <!-- Newsletter & Social Links -->
+            <div class="col-md-3">
+                <h5>Subscribe for Updates</h5>
+                <form>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                        <button class="btn btn-warning text-dark" type="submit">Subscribe</button>
+                    </div>
+                </form>
+                <h5>Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#" class="text-light me-2"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-light me-2"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-light me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-3 border-light">
+
+        <!-- Copyright Notice -->
+        <div class="text-center">
+            <p class="mb-0">&copy; 2025 Afri-Lottery. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS and Popper.js for dropdown functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

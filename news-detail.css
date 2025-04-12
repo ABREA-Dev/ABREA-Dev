@@ -1,0 +1,49 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Hero Section */
+.news-hero {
+  position: relative;
+  min-height: 350px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem 0;
+  color: white;
+}
+
+.news-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.news-hero-content {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 2rem;
+}
+
+/* News Content */
+.news-content {
+  background-color: #ffffff;
+}
+
+/* Reactions */
+.reaction-inline button {
+  font-size: 0.875rem;
+  padding: 4px 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.reaction-inline button:hover {
+  background-color: #FFF8DC;
+}

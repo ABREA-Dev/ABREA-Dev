@@ -1,0 +1,594 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Fixed Navbar */
+.navbar {
+    background-color: #FFF8DC; /* Milky Yellow */
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+/* Rotating Dice */
+.navbar-brand i {
+    margin-right: 10px;
+    color: #FFD700; /* Gold */
+    animation: spin 3s infinite linear;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #333 !important; /* Dark Text */
+    transition: color 0.4s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFD700 !important; /* Gold Hover */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    background-color: #FFF8DC; /* Match Navbar */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    color: #333 !important; /* Dark text */
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item i {
+    margin-right: 10px;
+    color: #FFD700; /* Gold */
+}
+
+.dropdown-item:hover {
+    background-color: #FFD700 !important; /* Gold hover */
+    color: #fff !important;
+}
+
+/* Prevent content from hiding under navbar */
+body {
+    padding-top: 50px;
+    background-color: #f8f9fa;
+}
+
+/* Mobile Fix: Ensure dropdown works */
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background: url("Images/lottery (2).jpeg") center/cover no-repeat;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust darkness (0.5 = 50%) */
+    z-index: -1;
+}
+
+.jackpot-box {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2); /* Light transparent box */
+    padding: 20px 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px); /* Soft blur effect */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.jackpot-box h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFD700; /* Gold color for jackpot amount */
+}
+
+@keyframes pop {
+    0% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.5); opacity: 1; } /* Pop Up Effect */
+    100% { transform: scale(1); opacity: 0.8; }
+}
+
+.pop-effect {
+    animation: pop 0.3s ease-in-out;
+}
+
+.winning-number {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* winning 2*/
+/* General Styles */
+.countdown-container {
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text color for readability */
+    padding: 30px;
+    border-radius: 10px;
+    margin: 40px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-container h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FFD700; /* Gold */
+}
+
+.countdown-container h4 {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.countdown-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.countdown-box {
+    background-color: #f7f7f7; /* Light background for each box */
+    padding: 15px;
+    border-radius: 10px;
+    flex: 0 0 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: center;
+    text-align: center;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.countdown-box h3 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: #333; /* Dark text */
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.time-box {
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    color: #FFD700; /* Gold */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.time-box span {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.flip-inner {
+    font-weight: bold;
+    font-size: 3rem;
+    color: #FFD700;
+}
+
+.amount-at-stake {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #FF4500; /* Orange-Red for the amount */
+}
+
+/* Jackpot info inside Monthly Box */
+.jackpot-info {
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.estimated-jackpot,
+.cash-value {
+    color: #333;
+    margin: 5px 0;
+}
+
+.estimated-jackpot {
+    font-size: 1.25rem;
+}
+
+.cash-value {
+    font-size: 1.5rem;
+    color: #FF4500;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 767px) {
+    .countdown-wrapper {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .countdown-box {
+        flex: 0 0 80%; /* Make boxes take up 80% of the screen */
+        margin: 0 10px;
+        transition: transform 0.3s ease;
+        scroll-snap-align: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .countdown-box h3 {
+        font-size: 1.125rem; /* Adjust heading size for small screens */
+    }
+
+    .time-box {
+        padding: 12px 15px; /* Reduce padding for small screens */
+        font-size: 2rem; /* Reduce font size of time */
+    }
+
+    .time-box span {
+        font-size: 0.8rem; /* Reduce size of "HOURS", "MINUTES" labels */
+    }
+
+    .amount-at-stake {
+        font-size: 1rem; /* Adjust font size of the stake amount */
+    }
+
+    .jackpot-info {
+        font-size: 0.9rem;
+    }
+
+    .countdown-wrapper::-webkit-scrollbar {
+        display: none; /* Hide scrollbar on mobile */
+    }
+
+    .countdown-wrapper {
+        overflow-x: scroll; /* Enable scrolling on mobile */
+    }
+
+    .countdown-box {
+        margin: 0 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .countdown-wrapper {
+        flex-wrap: nowrap;
+    }
+}
+
+/* results */
+.winners-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.8), rgba(22, 33, 62, 0.8), rgba(15, 52, 96, 0.8)), 
+                url("Images/lottery (1).jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.winner-card {
+    background: linear-gradient(135deg, rgba(255, 204, 0, 0.9), rgba(255, 136, 0, 0.9));
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.winner-card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.winner-card h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.winner-category {
+    margin-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.winner-category h6 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.none {
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* FAQ */
+.faq-section {
+    background: #FAF3E0; /* Milky background */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.faq-title {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #222;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.faq-item {
+    margin-bottom: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff; /* White box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    width: 100%;
+    background: #fff;
+    color: #222;
+    padding: 15px;
+    font-size: 1.2rem;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.faq-question:hover {
+    background: #f1f1f1;
+}
+
+.faq-answer {
+    display: none;
+    background: #f9f9f9;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    color: #333;
+}
+
+/* Dropdown Icon */
+.faq-question::after {
+    content: "\25BC"; /* Downward arrow */
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+}
+
+.faq-question.active::after {
+    transform: rotate(180deg); /* Rotate icon when open */
+}
+
+/* footer */
+.contact-us-section {
+    background-color: #FAF3E0; /* Milky background */
+    padding: 50px 20px;
+    color: #333;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: left;
+}
+
+.contact-info {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.contact-info h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-info p, .social-links li {
+    font-size: 1rem;
+    color: #555;
+}
+
+.social-links {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.social-links li {
+    margin: 10px 0;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.contact-form h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: none;
+}
+    
+
+.btn:hover {
+    background-color: #004080;
+}
+
+@media (max-width: 768px) {
+    .contact-details {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-form {
+        margin-top: 30px;
+    }
+}
+
+/* Afri-Lottery button */
+.africa-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFD700; /* Gold */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.africa-button:hover {
+    transform: scale(1.05);
+}
+
+/* Mirror Animation Effect */
+.africa-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.2), rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+    transform: skewX(-20deg);
+    animation: shine 4s infinite;
+}
+
+@keyframes shine {
+    0% { left: -75%; }
+    25% { left: 100%; }
+    50% { left: -75%; }
+    100% { left: 100%; }
+}
+
+
+
+
+
+
+
